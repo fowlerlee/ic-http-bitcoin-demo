@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "canisters": {
+    "pricefeed_backend": {
+      "type": "motoko",
+      "main": "src/pricefeed_backend/main.mo"
+    },
+    "pricefeed_frontend": {
+      "type": "assets",
+      "source": [
+        "src/pricefeed_frontend/assets"
+      ],
+      "dependencies": [
+        "pricefeed_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  }
+}
